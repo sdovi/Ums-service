@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a2e052c4.css",
+    "main.js": "/static/js/main.84ff8d5e.js",
+    "static/media/work.png": "/static/media/work.5b510f0873f963703aca.png",
+    "static/media/photo.png": "/static/media/photo.64a2304d89b767507e76.png",
+    "static/media/bg.png": "/static/media/bg.2e9a676b815639174107.png",
+    "static/media/Mask Group.png": "/static/media/Mask Group.24595348d04affc6fb5e.png",
+    "static/media/sertificates2.png": "/static/media/sertificates2.ff70735a355fc804f64e.png",
+    "static/media/photo_2021-03-26_12-46-46 1.png": "/static/media/photo_2021-03-26_12-46-46 1.68d66c4a7ef6c7260d4d.png",
+    "static/media/lady.png": "/static/media/lady.a40253da39f56a4fd03b.png",
+    "static/media/youtube.png": "/static/media/youtube.052775d1a4816fd190cb.png",
+    "static/media/Rectangle 5 (4).png": "/static/media/Rectangle 5 (4).959c887a2ab9fa515a87.png",
+    "static/media/back.png": "/static/media/back.b334642dd125df1cbf41.png",
+    "static/media/card1.png": "/static/media/card1.0b7179345f38a44dead9.png",
+    "static/media/card3.png": "/static/media/card3.e21588ee19330922120a.png",
+    "static/media/krug.png": "/static/media/krug.3e5ac8a9413596851973.png",
+    "static/media/card2.png": "/static/media/card2.74faa821c6443d7a2de1.png",
+    "static/media/4.png": "/static/media/4.316a3fa3b3e5b4d51ff7.png",
+    "static/media/logo.svg": "/static/media/logo.6641c287adda8d257c54a058840a79ee.svg",
+    "static/media/2.png": "/static/media/2.4180d3276f033e8de9e7.png",
+    "static/media/Page 1.svg": "/static/media/Page 1.73202318d1a042da833fbe5bb3af1ef5.svg",
+    "static/media/customer-service 1.svg": "/static/media/customer-service 1.ae2ea97c23386166b0fd64dd5c8f0ef5.svg",
+    "static/media/Vector (2).svg": "/static/media/Vector (2).6352b0d96928464ec65ca23b1f205743.svg",
+    "static/media/1.svg": "/static/media/1.9baac0769c97258ad533a69ffc524b87.svg",
+    "static/media/favorite 1.svg": "/static/media/favorite 1.c8fcde839f01e6ca78905cae0eea98f5.svg",
+    "static/media/truck 1.svg": "/static/media/truck 1.86ce5543e47010121f81dc03089d257a.svg",
+    "static/media/clarity_certificate-line.svg": "/static/media/clarity_certificate-line.86f510f7d5615c44be037fff02501970.svg",
+    "index.html": "/index.html",
+    "main.a2e052c4.css.map": "/static/css/main.a2e052c4.css.map",
+    "main.84ff8d5e.js.map": "/static/js/main.84ff8d5e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2e052c4.css",
+    "static/js/main.84ff8d5e.js"
+  ]
+}
