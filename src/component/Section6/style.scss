@@ -1,0 +1,103 @@
+.reviews-carousel {
+    background-color: white;
+    padding: 20px;
+}
+
+.reviews-carousel h2 {
+    color: green;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.review-slide {
+    display: flex;
+    justify-content: space-around;
+}
+
+.review {
+    width: calc(100% / 3 - 20px);
+    text-align: center;
+}
+
+.review-date {
+    color: gray;
+    font-size: 14px;
+}
+.carousel .control-dots .dot {
+    /* Add your custom styles here */
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    box-shadow: none;
+    border: 2px solid rgba(0, 127, 0, 1);
+}
+
+.review {
+    width: calc(100% / 3 - 20px);
+    text-align: start;
+    padding: 40px 30px 40px 30px;
+    border-radius: 3px;
+}
+.reviews-carousel {
+    background-color: rgb(238, 244, 243);
+}
+.review {
+    box-shadow: 0px 2px 4px 0px rgba(0, 24, 112, 0.21);
+    background-color: white;
+}
+.otziv {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 15px;
+}
+.review h3 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.review-date {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+}
+.review img {
+    width: 15px !important;
+}
+.sect6__otzivi {
+    color: rgba(0, 127, 0, 1);
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 53px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.review-slide {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.review {
+    width: calc(100% / 3 - 20px);
+    text-align: start;
+    margin-bottom: 20px;
+}
+.mobile-sect6 {
+    display: none;
+}
+
+@media screen and (max-width: 822px) {
+    .pkversions {
+        display: none;
+    }
+    .mobile-sect6 {
+        display: block;
+    }
+
+    .review {
+        width: calc(100%  - 20px);
+        text-align: center;
+    }
+}

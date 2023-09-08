@@ -1,0 +1,251 @@
+.order__top-text h2 {
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 40px;
+    color: rgba(0, 127, 0, 1);
+    padding-top: 30px;
+    padding-bottom: 28px;
+}
+.order__container {
+    width: 95%;
+    margin: auto;
+}
+.order__block1 {
+    background-color: #fff;
+    padding: 30px 40px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 24, 112, 0.21);
+}
+.order__com-block {
+    display: flex;
+    justify-content: space-between;
+}
+.recipient-info input,
+.phone-email input,
+.comments input,
+.total-amount input {
+    display: block;
+    margin-bottom: 20px;
+    max-width: 613px;
+    width: 100%;
+
+    padding: 12px 22px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.order__com-block {
+    position: relative;
+}
+.comments input {
+    padding: 40px 22px;
+}
+
+.submit-button {
+    padding-top: 51px;
+}
+
+.submit-button button {
+    margin-top: 50px;
+    display: block;
+    background-color: rgba(243, 118, 27, 1);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 31px;
+    cursor: pointer;
+}
+.recipient-info h5 {
+    padding-bottom: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.phone-email {
+    padding-top: 40px;
+}
+.phone-email h5 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.comments {
+    padding-top: 50px;
+}
+.comments h5 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.order__block1 {
+    max-width: 888px;
+    width: 100%;
+}
+input:focus {
+    outline: none;
+}
+
+.order__comm-price {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: rgba(0, 127, 0, 1);
+}
+
+.order__block2 {
+    padding: 10px 20px;
+    background-color: #fff;
+}
+.order__product-text {
+    display: block;
+    text-align: start;
+}
+.order__product-text p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.order__product-text p:nth-child(2) {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.order__product-text p:nth-child(3) {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.order__product img {
+    height: 150px;
+    width: 150px;
+}
+.order__product {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.order__com-block {
+    gap: 15px;
+}
+.order__block2 h5 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+.order__block2 {
+    max-width: 437px;
+    width: 100%;
+    height: 100%;
+}
+
+.order__product {
+    padding-top: 20px;
+}
+.order__com-price-right {
+    padding-top: 20px;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.submit-button {
+    padding-bottom: 50px;
+}
+
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content h2{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.modal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    width: 30%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+}
+
+.close-button {
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    font-size: 30px;
+    border: none;
+    background-color: transparent;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.confirm-button, .cancel-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.confirm-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.cancel-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.warning {
+  background-color: #ffcccc; /* Красный фон */
+  color: #ff0000; /* Красный цвет текста */
+  padding: 5px 10px; /* Отступы вокруг текста */
+  border: 1px solid #ff0000; /* Красная рамка */
+  border-radius: 5px; /* Закругленные углы */
+  font-size: 14px; /* Размер шрифта */
+  width: 82%;
+  margin-top: 5px; /* Верхний отступ */
+}
+
+
+@media screen and (max-width: 990px) {
+    .order__block2 {
+        display: none;
+    }
+    .order__block1{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (max-width:650px) {
+    .order__top-text h2{
+        font-size: 6vw;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .order__top-text h2{
+        font-size: 8vw;
+    }
+}

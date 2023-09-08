@@ -1,0 +1,118 @@
+.section4 {
+    background: rgb(21, 84, 92);
+    background: linear-gradient(90deg, rgba(21, 84, 92, 1) 0%, rgba(46, 162, 100, 1) 100%);
+}
+
+.sect4__text {
+    color: white;
+    text-align: center;
+}
+.sect4__text h1 {
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.sect4__comm-block {
+    padding: 30px 0px;
+}
+.sect4__container {
+    width: 80%;
+    margin: auto;
+}
+.sect4__block-input {
+    padding-top: 50px;
+}
+.sect4__input {
+    padding: 0px 40px;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.255);
+    border: 2px solid rgba(255, 255, 255, 0.7);
+}
+.sect4__input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+.sect4__block-input {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.sect4__block-input button {
+    border: none;
+    border-radius: 3px;
+    padding: 9px 31px 12px 31px;
+    border-radius: 3px;
+    color: white;
+    font-weight: 700;
+    max-width: 20%;
+    width: 100%;
+    background-color: rgba(243, 118, 27, 1);
+    box-shadow: 0px 2px 4px 0px rgba(0, 24, 112, 0.21);
+}
+.sect4_text2 {
+    color: white;
+    text-align: center;
+}
+.sect4_text2 h3 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 24px;
+    padding-top: 20px;
+}
+.sect4__logo img {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+}
+.sect4_text2 {
+    padding-top: 30px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .sect4__block-input button {
+        max-width: 30%;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .sect4__block-input {
+        display: block;
+        justify-content: center;
+    }
+    .sect4__block-input button {
+        max-width: 100%;
+        margin-top: 20px;
+
+    }
+    .sect4__input{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 570px) {
+    .sect4__input {
+        margin-top: 20px;
+    }
+    .sect4__block-input button {
+        margin-top: 20px;
+    }
+    .sect4__text h1{
+        font-size: 30px;
+    }
+    .sect4_text2 h3{
+        width: 80%;
+        margin: auto;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sect4__text h1{
+        font-size: 8vw;
+        line-height: 9vw;
+    }
+    .sect4_text2 h3{
+        font-size: 5vw;
+        line-height: 6vw;
+    }
+}

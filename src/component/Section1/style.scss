@@ -1,0 +1,241 @@
+.sect1_box-photo-container {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}
+.sect1_box-photo-container {
+    overflow-x: scroll;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.sect1__card1 {
+    width: 100%;
+    max-width: 50%;
+}
+.sect1__card1-bg {
+    width: 100%;
+    position: relative;
+}
+
+.sect1__card1-bg img {
+    position: absolute;
+    z-index: -1;
+
+    width: 100%;
+}
+.container2 {
+    width: 90%;
+    margin: auto;
+}
+.sect1__card1-text {
+    padding: 40px 40px;
+    color: white;
+    width: 100%;
+}
+
+.sect1__row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sect1__card1-text h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    line-height: 25px;
+    font-size: 2vw;
+}
+
+.sect1__card1-text p {
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 1.8vw;
+}
+.sect1_card2 {
+    background-color: white;
+    padding: 30px;
+}
+
+.sect1_card2 h3 {
+    font-size: 1.7vw;
+    font-weight: 400;
+    line-height: 2.2vw;
+    color: #007f00;
+}
+.sect1_card2 img {
+    width: 100%;
+}
+
+.view__com-btn{
+    display: flex;
+    gap: 20px;
+}
+
+.view__com-btn{
+    height: 100%;
+}
+
+.View__korzina-btn button{
+    border: none;
+    background-color: white;
+    padding: 9px 31px 12px 31px;
+    border-radius: 3px;
+    color: rgba(243, 118, 27, 1);
+    border: 2px rgba(243, 118, 27, 1) solid;
+    border-radius: 3px;
+    font-size: 15px;
+    vertical-align: middle;
+    height: 100%;
+    
+}
+.sect1__btn {
+    background-color: white;
+    margin-top: 20px;
+    padding: 9px 31px 12px 31px;
+    border-radius: 3px;
+    color: rgba(243, 118, 27, 1);
+    border: 2px rgba(243, 118, 27, 1) solid;
+    border-radius: 3px;
+}
+.sect1__btn:hover {
+    background-color: rgba(243, 118, 27, 1);
+    margin-top: 20px;
+    padding: 9px 31px 12px 31px;
+    border-radius: 3px;
+    color: white;
+    border: 2px rgba(243, 118, 27, 1) solid;
+    border-radius: 3px;
+}
+.sect1_card1-btn {
+    display: none;
+}
+.sect1__6-com-box {
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+    margin: auto;
+    box-shadow: 0px 2px 4px 0px rgba(0, 24, 112, 0.21);
+}
+.sect1__btn {
+    display: flex;
+    margin: auto;
+    margin-top: 15px;
+}
+.sect1__6-end {
+    padding-bottom: 20px;
+}
+.sect1__6-card {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sect1__6-card p {
+    font-size: 1.05vw;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.sect1__6-boxes {
+    width: 90%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1190px) {
+    .sect1__br1 {
+        display: none;
+    }
+    .sect1__card1-text {
+        padding: 20px 40px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .sect1__row {
+        display: block;
+    }
+    .sect1__card1 {
+        width: 100%;
+        max-width: 100%;
+    }
+    .sect1__card1-text h2 {
+        font-size: 2.7vw;
+    }
+    .sect1__card1-text p {
+        font-size: 2.1vw;
+        line-height: 3.5vw;
+    }
+    .sect1__card1-bg img {
+        height: 110vh;
+    }
+    .sect1_card2 h3 {
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+    .sect1__6-card p {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+}
+@media screen and (max-width: 520px) {
+    .sect1__6-card {
+        width: 90%;
+        margin: auto;
+    }
+    .sect1__6-boxes {
+        width: 100%;
+        margin: auto;
+    }
+    .sect1__row {
+        display: block;
+    }
+    .sect1__card1 {
+        width: 100%;
+        max-width: 100%;
+    }
+    .sect1__card1-text h2 {
+        font-size: 5.5vw;
+    }
+    .sect1__card1-text p {
+        font-size: 3vw;
+        line-height: 4.4vw;
+    }
+    .sect1__card1-text {
+        padding: 20px;
+    }
+    .sect1_card2 {
+        padding: 20px;
+    }
+    .sect1_card1-btn {
+        display: block;
+        justify-content: center;
+        padding: 10px 30px;
+        font-size: 4vw;
+        color: white;
+        border: none;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        background-color: rgba(243, 118, 27, 1);
+    }
+    .sect1_card2 h3 {
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+    .sect1__btn {
+        width: 100%;
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .sect1__card1-text h2 {
+        font-size: 5.5vw;
+    }
+    .sect1__card1-text p {
+        font-size: 3.9vw;
+        line-height: 4.8vw;
+    }
+}

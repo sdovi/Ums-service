@@ -1,0 +1,290 @@
+/* Style for the top section of the cart */
+.Korzina__text-top h2 {
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 40px;
+    color: rgba(0, 127, 0, 1);
+}
+
+/* Style for the main cart container */
+.korzina__comm-card {
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(0, 24, 112, 0.21);
+    padding: 50px 30px;
+    border-radius: 3px;
+}
+.korzina-pust {
+    text-align: center;
+}
+/* Style for the cart container */
+.korzina__container {
+    width: 90%;
+    margin: auto;
+}
+.kozina__comm-money {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 41px;
+    color: rgba(0, 127, 0, 1);
+}
+
+/* Style for the "Оформить заказ" button */
+.kozina__making-order-btn {
+    background-color: rgba(243, 118, 27, 1);
+    padding: 9px 0px 12px 0px;
+    max-width: 199px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    color: white;
+    border: none;
+}
+
+/* Style for the "Для продолжения нажмите кнопку 'оформить заказ'" text */
+.korzina__making {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+
+/* Style for the product information headers */
+.korzona__korzina-text p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    flex: 1;
+    text-align: center;
+}
+
+/* Style for the product details */
+.korzona__korzina-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 45px;
+}
+
+/* Style for the product photo */
+.korzina__product-photo img {
+    max-width: 150px;
+    width: 100%;
+    height: 150px;
+}
+
+/* Style for the product container */
+.korzina__product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.kozina__making-order-btn {
+    padding: 10px 30px;
+}
+/* Style for the product title */
+.korzina-product-title {
+    max-width: 235px;
+    width: 100%;
+}
+
+/* Style for the product price */
+.korzina-product-price h4 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 41px;
+}
+.xrest-mb {
+    display: none;
+}
+
+/* Style for the product title (name) */
+.korzina-product-title h3 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.korzina__product {
+    padding-top: 80px;
+    position: relative;
+}
+.korzina__p p {
+    position: absolute;
+    top: 0px;
+    top: 30px;
+}
+.korzina__product-photo p {
+    left: 50px;
+}
+.xrest-mb i {
+    display: none;
+}
+.korzina__container2 {
+    width: 90%;
+    margin: auto;
+}
+.korzina__poxoj h2 {
+    text-align: center;
+    color: rgba(0, 127, 0, 1);
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 40px;
+    padding-top: 62px;
+    padding-bottom: 40px;
+}
+.Korzina__text-top h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* Media query for screens with a maximum width of 620px */
+@media screen and (max-width: 620px) {
+    /* Adjustments for smaller screens */
+    .korzina__making {
+        display: block;
+        padding-top: 15px;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .korzina-product-title h3 {
+        font-size: 2vw;
+    }
+    .korzina-product-price h4 {
+        font-size: 2.1vw;
+    }
+    .korzina-product-amout h4 {
+        font-size: 2vw;
+    }
+}
+.korzina-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 990px) {
+    .korzina__product-photo img {
+        max-width: 130px;
+        height: 120px;
+    }
+}
+@media screen and (max-width: 840px) {
+    .korzona__korzina-text p {
+        display: none;
+    }
+    .korzina-mobile {
+        display: block;
+    }
+    .korzina-pk {
+        display: none;
+    }
+    .korzina__mobile-content {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .korzina-product-title h3 {
+        font-size: 2.5vw;
+        line-height: 3.4vw;
+    }
+    .korzina__product-photo img {
+        max-width: 145px;
+        height: 140px;
+    }
+}
+@media screen and (max-width: 770px) {
+    .korzina-product-title h3 {
+        font-size: 3vw;
+        line-height: 3.9vw;
+    }
+    .korzina-product-price h4 {
+        font-size: 3vw;
+    }
+    .korzina-product-amout h4 {
+        font-size: 3.5vw;
+        font-weight: 700;
+    }
+}
+@media screen and (max-width: 620px) {
+    .korzina-product-title h3 {
+        font-size: 3.7vw;
+        line-height: 3.9vw;
+    }
+    .korzina-product-price h4 {
+        padding-left: 10px;
+        font-size: 4vw;
+    }
+    .korzina-product-amout h4 {
+        font-size: 5vw;
+    }
+}
+@media screen and (max-width: 570px) {
+    .korzina__container {
+        width: 100%;
+    }
+    .korzina__product-photo img {
+        max-width: 150px;
+    }
+}
+@media screen and (max-width: 520px) {
+}
+@media screen and (max-width: 480px) {
+    .korzina-product-delete {
+        display: none;
+    }
+    .korzina__product-mb {
+        display: block;
+    }
+
+    .korzina__product-photo img {
+        max-width: 400px;
+        width: 100%;
+        height: 100%;
+    }
+    .korzina-product-title h3 {
+        font-size: 5vw;
+        text-align: center;
+        line-height: 5vw;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .korzina-product-title {
+        width: 100%;
+        max-width: 100%;
+    }
+    .korzina__mobile-content {
+        display: flex;
+        justify-content: center;
+    }
+    .korzina-product-price {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .korzina-product-amout {
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+        gap: 50px;
+    }
+    .korzina-product-amout {
+        align-items: center;
+    }
+}
+@media screen and (max-width: 420px) {
+    .korzina__mobile-content {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 390px) {
+    .korzina-product-amout h4 {
+        font-size: 8vw;
+    }
+    .korzina-product-title h3 {
+        font-size: 6vw;
+        line-height: 7vw;
+    }
+    .korzina-product-price h4 {
+        font-size: 6vw;
+    }
+}

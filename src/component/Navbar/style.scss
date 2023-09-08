@@ -1,0 +1,272 @@
+.banner-top {
+    background: rgb(21, 84, 92);
+    background: linear-gradient(90deg, rgba(21, 84, 92, 1) 0%, rgba(46, 162, 100, 1) 100%);
+    height: 30px;
+}
+
+.banner-top h5 {
+    color: white;
+    //styleName: reg12;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: center;
+}
+.btn-secondary{
+    cursor: pointer;
+}
+.nav__phone {
+    display: flex;
+    align-items: center;
+}
+.nav__phone i {
+    color: #30489f;
+}
+.time-icon {
+    padding-right: 10px;
+}
+.zvon {
+    font-size: 14px;
+}
+.nav__phone h6 {
+    color: #007f00;
+    //styleName: menu  18;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.navbar-nav {
+    gap: 20px;
+}
+.nav__phone {
+    gap: 10px;
+}
+.common__box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.language {
+    display: flex;
+    gap: 5px;
+}
+.nav__bottom-block {
+    display: block;
+    justify-content: center;
+}
+.hr {
+    margin: 10px 0px;
+}
+.common__box h5:nth-child(1) {
+    color: #f3761b;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+}
+.common__box h5 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+}
+.nav__korzina {
+    position: relative;
+}
+.common {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.time i {
+    color: #30489f;
+}
+.time {
+    gap: 10px;
+}
+.tochka {
+    color: #07a907;
+}
+.user h6 {
+    font-size: 13px;
+    padding-bottom: 1px;
+}
+.nav__bottom-block {
+    max-width: 90%;
+    width: 100%;
+}
+.nav__korzina i {
+    color: #007f00;
+}
+.sup {
+    padding: 2px 8px;
+    font-weight: 700;
+    color: white;
+    background-color: #f3761b;
+    border: 2.5px white solid;
+    border-radius: 50%;
+    position: relative;
+    left: -17px;
+    top: 13px;
+}
+
+.dropdown-menu {
+    text-align: center;
+    box-shadow: 0px 2px 4px 0px rgba(0, 24, 112, 0.21);
+}
+
+.modal-obratniy {
+    background-color: #fff;
+}
+.modal-overlay {
+    background-color: black;
+}
+.dropdown-menu.show {
+    border: none;
+    padding: 0;
+}
+.dropdown-item {
+    color: #f3761b;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    padding: 15px 10px !important  ;
+}
+.anticon-down {
+    color: #f3761b;
+}
+
+.modal-form {
+    display: block;
+    justify-content: center;
+}
+/* Стили для контейнера формы */
+.modal-form {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Стили для инпутов */
+.modal-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+    font-size: 16px;
+}
+
+/* Стили для кнопки */
+.modal-form button {
+    margin-top: 20px;
+    max-width: 100%;
+    width: 100%;
+
+    padding: 10px 30px;
+    background-color: white; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста кнопки */
+    border: 2px solid #f3761b;
+    border-radius: 5px;
+
+    //styleName: btn;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+
+    color: #f3761b;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета фона при наведении */
+}
+
+.modal-form button:hover {
+    background-color: #f3761b; /* Цвет фона кнопки при наведении */
+    color: #fff;
+}
+
+.contack-link {
+    color: black !important;
+}
+.common__box-mobile {
+    display: none;
+}
+
+.katalogs__mobile {
+    display: none;
+}
+
+.nav__korzina-mb {
+    display: none;
+}
+@media screen and (max-width: 1250px) {
+    .common__box h5 {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1075px) {
+    .common__box h5 {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 990px) {
+    .nav__bottom-block {
+        display: flex;
+    }
+    .nav__korzina-pk {
+        display: none;
+    }
+    .nav__korzina-mb {
+        display: block;
+    }
+    .nav__bottom-block {
+        padding-top: 20px;
+    }
+    .common__box-mobile {
+        display: block;
+    }
+    .common__box-pk {
+        display: none;
+    }
+    .katalogs__mobileh5 {
+        color: #f3761b;
+    }
+    .katalogs__mobile {
+        display: block;
+    }
+    .obratniy-zvonok {
+        display: block;
+    }
+}
+@media screen and (max-width: 520px) {
+    .banner-top {
+        display: none;
+    }
+}
+@media screen and (max-width: 420px) {
+    .Logonavbar {
+        width: 60%;
+    }
+    .navbar-toggler{
+        padding: 5px 5px;
+    }
+    .sup {
+        padding: 0px 4px;
+        font-weight: 700;
+        color: white;
+        background-color: #f3761b;
+        border: 2.5px white solid;
+        border-radius: 50%;
+        position: relative;
+        left: -17px;
+        top: 13px;
+    }
+    .katalogs__mobileh5 {
+        font-size: 16px;
+        padding-top: 8px;
+        text-align: center;
+    }
+}

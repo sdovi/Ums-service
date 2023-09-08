@@ -1,0 +1,122 @@
+.sect3__card {
+    background-color: white;
+    display: block;
+    box-shadow: 0px 2px 4px 0px rgba(0, 24, 112, 0.21);
+    margin-top: 20px;
+}
+.sect3__card-text {
+    padding: 10px 25px;
+}
+.sect3__card-text h4 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.sect3__card-bottom-block {
+    display: flex;
+    justify-content: space-between;
+}
+.sect3__card-bottom-block h4 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 127, 0, 1);
+}
+.sect3__card img {
+    width: 100%;
+}
+.sect3__card-bottom-block button {
+    padding: 9px 21px 12px 21px;
+    color: rgba(243, 118, 27, 1);
+    border: 2px rgba(243, 118, 27, 1) solid;
+    border-radius: 3px;
+    background-color: white;
+    font-weight: 600;
+}
+
+.container-sect3 {
+    margin: auto;
+    width: 90%;
+}
+
+@media screen and (max-width: 1130px) {
+    .sect3__card-text h4 {
+        font-size: 15px;
+    }
+    .sect3__card-bottom-block h4 {
+        font-size: 20px;
+    }
+    .sect3__card-bottom-block button {
+        padding: 5px 25px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .sect3__card-text h4 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .sect3__card-bottom-block h4 {
+        font-size: 25px;
+    }
+    .sect3__card-bottom-block button {
+        padding: 10px 45px;
+    }
+}
+@media screen and (max-width: 754px) {
+    .sect3__card-text h4 {
+        font-size: 3.5vw;
+        line-height: 5vw;
+    }
+    .sect3__card-bottom-block h4 {
+        font-size: 3.5vw;
+    }
+    .sect3__card-bottom-block button {
+        width: 100%;
+        margin: auto;
+        padding: 10px 0px;
+    }
+    .sect3__card-bottom-block {
+        display: block;
+    }
+}
+@media screen and (max-width: 709px) {
+    .sect3__card-text h4 {
+        font-size: 3.3vw;
+        line-height: 5vw;
+    }
+    .sect3__card-bottom-block h4 {
+        font-size: 3.5vw;
+    }
+}
+@media screen and (max-width: 570px) {
+    .sect3__card-text h4 {
+        font-size: 15.5px;
+        line-height: 20px;
+    }
+    .sect3__card-bottom-block h4 {
+        font-size: 17px;
+    }
+    .sect3__card-bottom-block button {
+        padding: 6px 0px;
+        font-size: 4vw;
+    }
+    .sect3__card-gap {
+        padding: 0px 5px;
+    }
+}
+@media screen and (max-width: 570px) {
+    .sect3__card-text h4 {
+        font-size: 4.8vw;
+        line-height: 6vw;
+    }
+    .sect3__card-bottom-block h4 {
+        font-size: 6vw;
+    }
+    .sect3__card-bottom-block button {
+        font-size: 4vw;
+    }
+}
