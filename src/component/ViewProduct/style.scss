@@ -122,6 +122,9 @@
 
     color: rgba(0, 127, 0, 1);
 }
+.sect3__card-text h4 {
+    height: 75px;
+}
 .checkbox-container {
     padding-bottom: 25px;
 }
@@ -163,7 +166,7 @@
     height: 100%;
 }
 
-// modal-ocno 
+// modal-ocno
 /* Ваш файл со стилями */
 .fullscreen-image-container {
     position: fixed;
@@ -175,14 +178,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .fullscreen-image {
+}
+
+.fullscreen-image {
     max-height: 100%;
     max-width: 100%;
-  }
-  
-// modal-ocno-end 
+}
+
+// modal-ocno-end
 
 .view__button-buy {
     width: 100%;
@@ -278,7 +281,8 @@
 }
 
 .sect3__card-bottom-block button {
-    padding: 10px 20px;
+    padding: 0px 10px;
+    height: 60px;
 }
 .view__specifications-tab {
     cursor: pointer;
@@ -328,11 +332,6 @@
     line-height: 24px;
 }
 
-
-
-
-
-
 @media screen and (max-width: 1075px) {
     .view__block1 {
         display: block;
@@ -369,7 +368,7 @@
     .view__bottom-deskription {
         width: 100%;
     }
-    .container-view{
+    .container-view {
         width: 100%;
     }
 }
@@ -413,7 +412,6 @@
 .view__mobile {
     display: none;
 }
-
 @media screen and (max-width: 621px) {
     .view__text1 h1 {
         font-size: 2em;
@@ -423,10 +421,7 @@
     .view__block-photo {
         display: block;
     }
-    .sect3__card-text h4 {
-        max-height: 85px;
-        height: 100%;
-    }
+    
     .view__title-mobile {
         font-weight: 700;
         line-height: 40px;
@@ -434,7 +429,17 @@
         padding-top: 10px;
         padding-bottom: 20px;
     }
+    .view__text-botom-row{
+        max-height: 84px;
+        height: 100%;
+        overflow: scroll;
+    }
+    .sect3__card-bottom-block button{
+        font-size: 3.5vw;
+        padding: 15px 0px;
+        line-height: 20px;
 
+    }
     .view__text-common {
         display: block;
     }
@@ -488,8 +493,15 @@
     .container-view {
         width: 96%;
     }
+    .view__com-quanity {
+        width: 100%;
+        justify-content: space-between;
+    }
 }
-
+.container__view2 {
+    width: 90%;
+    margin: auto;
+}
 @media screen and (max-width: 500px) {
     .view__text-dostavka p {
         font-size: 3vw;
@@ -502,7 +514,11 @@
     .view__specifications-comm-block {
         padding: 25px 35px;
     }
-    .view__specifications-comm-block h2 {
+    .view__specifications-tabs {
+        padding: 0px 0px;
+    }
+    .view__bottom-block{
+        display: block;
     }
 
     .view__specifications-tab.active {
@@ -514,6 +530,12 @@
     .view__block-photo img {
         width: 100%;
         margin-top: 10px;
+    }
+    .sect3__card-bottom-block button{
+        font-size: 3.7vw;
+        padding: 12px 10px;
+        line-height: 15px;
+
     }
     .view__block-photo {
         max-width: 70px;
@@ -556,23 +578,23 @@
         font-size: 4.5vw;
         line-height: 4vw;
     }
-    .view__com-quanity{
+    .view__com-quanity {
         display: block;
     }
-    .view__com-btn button{
+    .view__com-btn button {
         width: 100%;
         max-width: 100%;
     }
     .view__text1 {
-        max-width:100%;
+        max-width: 100%;
         width: 100%;
     }
-    .View__korzina-btn{
+    .View__korzina-btn {
         margin-top: 20px;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 350px) {
     .view__common-block {
         padding: 5px;
     }

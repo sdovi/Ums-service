@@ -85,7 +85,7 @@ export const Navbar = () => {
     };
     // api post-end
     return (
-        <div>
+        <div className='fake-navbar'>
             <div className="banner-top">
                 <h5>Доставка в любой город Украины</h5>
 
@@ -114,9 +114,9 @@ export const Navbar = () => {
                     </div>
 
                     <div className="nav__korzina nav__korzina-mb">
-                            <Link to={'/korzina'}><i class="fa-solid fa-basket-shopping fa-xl"></i></Link>
-                            <sup className='sup'>{totalUniqueItems}</sup>
-                        </div>
+                        <Link to={'/korzina'}><i class="fa-solid fa-basket-shopping fa-xl"></i></Link>
+                        <sup className='sup'>{totalUniqueItems}</sup>
+                    </div>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -225,7 +225,7 @@ export const Navbar = () => {
                         </div>
                         <div className="nav__korzina nav__korzina-pk">
                             <Link to={'/korzina'}><i class="fa-solid fa-basket-shopping fa-xl"></i></Link>
-                            <sup className='sup'>{totalUniqueItems}</sup>
+                            <Link to={'/korzina'}><sup className='sup'>{totalUniqueItems}</sup></Link>
                         </div>
                     </div>
                 </div>
@@ -256,6 +256,7 @@ export const Navbar = () => {
                         </div>
                     </div>
                 </div>
+
             )}
 
         </div>

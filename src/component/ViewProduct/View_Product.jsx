@@ -266,30 +266,32 @@ export const View_Product = () => {
               <div className="korzina__poxoj">
                 <h2>Похожие товары</h2>
               </div>
-              <div className="row">
-                {array.map((item) => (
-                  <div
-                    className="col-lg-3 col-md-6 col-sm-6 col-6 sect3__card-gap"
-                    key={item.id}
-                  >
-                    <div className="sect3__card">
-                      <Link to={`/${item.id}`}>
-                        <img src={item.image} alt="" />
-                      </Link>
-                      <div className="sect3__card-text">
-                        <h4>{item.title}</h4>
-                        <div className="sect3__card-bottom-block">
-                          <h4>{item.price} ₴</h4>
-                          <button onClick={() => addItem(item)}>
-                            {items.find((el) => el.id === item.id)
-                              ? 'Уже в корзине'
-                              : 'В корзину'}
-                          </button>
+              <div className="container__view2">
+                <div className="row">
+                  {array.map((item) => (
+                    <div
+                      className="col-lg-3 col-md-6 col-sm-6 col-6 sect3__card-gap"
+                      key={item.id}
+                    >
+                      <div className="sect3__card">
+                        <Link to={`/${item.id}`}>
+                          <img src={item.image} alt="" />
+                        </Link>
+                        <div className="sect3__card-text ovewflows_view">
+                          <h4 className='view__text-botom-row'>{item.title}</h4>
+                          <div className="sect3__card-bottom-block">
+                            <h4>{item.price} ₴</h4>
+                            <button onClick={() => addItem(item)}>
+                              {items.find((el) => el.id === item.id)
+                                ? 'Уже в корзине'
+                                : 'В корзину'}
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
             <Section4 />

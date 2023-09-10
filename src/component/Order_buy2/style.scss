@@ -70,11 +70,134 @@
 .comments {
     padding-top: 50px;
 }
+.Thanks {
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(0, 127, 0, 1);
+}
+.thanks__perezvon {
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+
+    color: rgba(0, 127, 0, 1);
+}
 .comments h5 {
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
 }
+
+// galochka
+
+.animation-ctn {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+@-webkit-keyframes checkmark {
+    0% {
+        stroke-dashoffset: 100px;
+    }
+
+    100% {
+        stroke-dashoffset: 200px;
+    }
+}
+
+@-ms-keyframes checkmark {
+    0% {
+        stroke-dashoffset: 100px;
+    }
+
+    100% {
+        stroke-dashoffset: 200px;
+    }
+}
+
+@keyframes checkmark {
+    0% {
+        stroke-dashoffset: 100px;
+    }
+
+    100% {
+        stroke-dashoffset: 0px;
+    }
+}
+
+@-webkit-keyframes checkmark-circle {
+    0% {
+        stroke-dashoffset: 480px;
+    }
+
+    100% {
+        stroke-dashoffset: 960px;
+    }
+}
+
+@-ms-keyframes checkmark-circle {
+    0% {
+        stroke-dashoffset: 240px;
+    }
+
+    100% {
+        stroke-dashoffset: 480px;
+    }
+}
+
+@keyframes checkmark-circle {
+    0% {
+        stroke-dashoffset: 480px;
+    }
+
+    100% {
+        stroke-dashoffset: 960px;
+    }
+}
+
+@keyframes colored-circle {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+/* other styles */
+/* .svg svg {
+      display: none
+  }
+   */
+.inlinesvg .svg svg {
+    display: inline;
+}
+
+/* .svg img {
+      display: none
+  } */
+
+.icon--order-success svg polyline {
+    -webkit-animation: checkmark 0.25s ease-in-out 0.7s backwards;
+    animation: checkmark 0.25s ease-in-out 0.7s backwards;
+}
+
+.icon--order-success svg circle {
+    -webkit-animation: checkmark-circle 0.6s ease-in-out backwards;
+    animation: checkmark-circle 0.6s ease-in-out backwards;
+}
+.icon--order-success svg circle#colored {
+    -webkit-animation: colored-circle 0.6s ease-in-out 0.7s backwards;
+    animation: colored-circle 0.6s ease-in-out 0.7s backwards;
+}
+// galochka-end
+
 .order__block1 {
     max-width: 888px;
     width: 100%;
@@ -161,10 +284,10 @@ input:focus {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
-.modal-content h2{
-    margin-bottom: 40px;
+.modal-content h2 {
+    margin-bottom: 10px;
     text-align: center;
 }
 .modal-container {
@@ -181,7 +304,7 @@ input:focus {
     border-radius: 10px;
     margin: auto;
     width: 30%;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
 .close-button {
@@ -199,14 +322,15 @@ input:focus {
     gap: 40px;
 }
 
-.confirm-button, .cancel-button {
+.confirm-button,
+.cancel-button {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
 }
 
 .confirm-button {
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: white;
 }
 
@@ -216,36 +340,45 @@ input:focus {
 }
 
 .warning {
-  background-color: #ffcccc; /* Красный фон */
-  color: #ff0000; /* Красный цвет текста */
-  padding: 5px 10px; /* Отступы вокруг текста */
-  border: 1px solid #ff0000; /* Красная рамка */
-  border-radius: 5px; /* Закругленные углы */
-  font-size: 14px; /* Размер шрифта */
-  width: 82%;
-  margin-top: 5px; /* Верхний отступ */
+    background-color: #ffcccc; /* Красный фон */
+    color: #ff0000; /* Красный цвет текста */
+    padding: 5px 10px; /* Отступы вокруг текста */
+    border: 1px solid #ff0000; /* Красная рамка */
+    border-radius: 5px; /* Закругленные углы */
+    font-size: 14px; /* Размер шрифта */
+    width: 82%;
+    margin-top: 5px; /* Верхний отступ */
 }
-
 
 @media screen and (max-width: 990px) {
     .order__block2 {
         display: none;
     }
-    .order__block1{
+    .order__block1 {
         width: 100%;
         max-width: 100%;
     }
 }
 
-
-@media screen and (max-width:650px) {
-    .order__top-text h2{
+.modal-buttons{
+    margin-top: 30px;}
+    
+@media screen and (max-width: 650px) {
+    .order__top-text h2 {
         font-size: 6vw;
     }
 }
 
-@media screen and (max-width:450px) {
-    .order__top-text h2{
+@media screen and (max-width: 450px) {
+    .order__top-text h2 {
         font-size: 8vw;
+    }
+    .modal-buttons{
+        margin-top: 30px;
+        gap: 10px;
+    }
+    .confirm-button{
+        padding: 10px 5px;
+        font-size: 15px;
     }
 }

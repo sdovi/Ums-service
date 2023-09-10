@@ -216,12 +216,34 @@
     .nav__bottom-block {
         display: flex;
     }
+    
+    .banner-top{
+        display: none;
+    }
+    .fake-navbar{
+        position: relative;
+        height: 60px;
+    }
+    .nav__korzina{
+        margin-bottom: 10px;
+    }
+    .navbar {
+        background-color: #ECECEC;
+        position: fixed;
+        z-index: 10;
+        margin-bottom: 56px;
+
+        width: 100%; /* Задайте ширину навбара, например, 100% */
+    }
     .nav__korzina-pk {
         display: none;
     }
     .nav__korzina-mb {
         display: block;
     }
+    .modal-content {
+        width: 80% !important;
+      }
     .nav__bottom-block {
         padding-top: 20px;
     }
@@ -245,6 +267,9 @@
     .banner-top {
         display: none;
     }
+    .modal-content {
+        width: 80% !important;
+      }
 }
 @media screen and (max-width: 420px) {
     .Logonavbar {
@@ -269,4 +294,7 @@
         padding-top: 8px;
         text-align: center;
     }
+    .modal-content {
+        width: 90% !important;
+      }
 }

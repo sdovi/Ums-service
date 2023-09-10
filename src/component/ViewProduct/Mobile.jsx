@@ -11,6 +11,7 @@ import { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { Context } from '../../context';
 import { useCart } from 'react-use-cart';
+import { Link } from 'react-router-dom';
 
 export const Mobile = () => {
   const [activeTab, setActiveTab] = useState('description');
@@ -147,7 +148,7 @@ export const Mobile = () => {
                           <div className="view__com-quanity">
                             <div className="view__com-btn">
                               <div className="view__button-buy">
-                                <button>Купить</button>
+                              <Link to={`/order/${card.id}`}><button>Купить</button></Link>
                               </div>
                             </div>
                             <div className="View__korzina-btn">

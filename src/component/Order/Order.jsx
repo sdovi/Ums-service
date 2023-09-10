@@ -4,6 +4,7 @@ import { useCart } from 'react-use-cart';
 import axios from 'axios';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 import Item from 'antd/es/list/Item';
 
 export const Order = () => {
@@ -27,7 +28,19 @@ export const Order = () => {
   });
 
   const [warning, setWarning] = useState('');
+  // Состояние для отображения модального окна с багодарностью
+  const [thankYouModalOpen, setThankYouModalOpen] = useState(false);
 
+  const openThankYouModal = () => {
+    setThankYouModalOpen(true);
+  };
+
+  const closeThankYouModal = () => {
+    setThankYouModalOpen(false);
+  };
+
+
+  // Состояние для отображения модального окна с багодарность-end
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -41,40 +54,80 @@ export const Order = () => {
   };
 
   const handleSubmitButtonClick = () => {
-    if (!formData.firstName || !formData.lastName || !formData.phone || !formData.email || !formData.comments) {
+    if (!formData.firstName || !formData.lastName || !formData.phone || !formData.email) {
       setWarning('Заполните все поля ввода');
       return;
     }
 
     setShowModal(true);
+    console.log(showModal);
   };
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   const postApi = async () => {
     const products = items.map((item) => {
       return `
-      ПРОДУКТ n${Item.id} ${item.title}
+      ПРОДУКТ N${Item.id} ${item.title}
       Количество:${item.quantity} x ${item.price}$ = ${item.quantity * item.price}$`;
     }).join('\n');
+
+    // Проверяем, есть ли комментарий; если нет, устанавливаем "нет"
+    const description = formData.comments || "нет";
+
     const requestData = {
       title: `${formData.firstName} ${formData.lastName}`,
       price: formData.phone,
       EMail: formData.email,
-      description: formData.comments,
+      description: description, // Используем значение комментария или "нет"
       shop: products,
     };
+
     try {
-      const response = await axios.post('http://127.0.0.1:8000/api/accepting/', requestData);
+      const response = await axios.post('https://64fb01c6cb9c00518f7a81e5.mockapi.io/Orders/', requestData);
       console.log('Response:', response.data);
-      window.location.reload();
+      // Закрыть текущее модальное окно
+      setShowModal(false);
+      // Открыть новое модальное окно с сообщением "спасибо, мы вам скоро перезвоним"
+      openThankYouModal();
     } catch (error) {
       console.error('Error:', error);
     }
   };
 
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  function ThankYouModal({ onClose }) {
+    const handleRefresh = () => {
+      window.location.reload();
+      onClose()
+    };
+    return (
+      <div className="modal" onClick={onClose}>
+        <div className="modal-container" data-aos="zoom-in-up">
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="close-button" onClick={handleRefresh}>&times;</button>
+            
+            
+            <div className="animation-ctn">
+              <div className="icon icon--order-success svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="154px" height="154px">
+                  <g fill="none" stroke="#22AE73" strokeWidth="2">
+                    <circle cx="77" cy="77" r="72" style={{ strokeDasharray: '480px, 480px', strokeDashoffset: '960px' }}></circle>
+                    <circle id="colored" fill="#22AE73" cx="77" cy="77" r="72" style={{ strokeDasharray: '480px, 480px', strokeDashoffset: '960px' }}></circle>
+                    <polyline className="st0" stroke="#fff" strokeWidth="10" points="43.5,77.8 63.7,97.9 112.2,49.4" style={{ strokeDasharray: '100px, 100px', strokeDashoffset: '200px' }} />
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <h2><span className='Thanks'>Спасибо,</span></h2>
+            <h3 className='thanks__perezvon'> мы вам скоро перезвоним</h3>
 
+
+          </div>
+        </div>
+      </div>
+    );
+  }
   function Modal({ onClose }) {
     return (
       <div className="modal" onClick={onClose}>
@@ -92,12 +145,13 @@ export const Order = () => {
     );
   }
 
+
   return (
     <div>
       <section className="Order">
         {isEmpty ? (
           <div>
-            <p className="korzina-pust">Ваша корзина пустая.</p>
+            <p className="korzina-pust">Нету продуктов.</p>
           </div>
         ) : (
           <div className="order__container mb-5">
@@ -160,17 +214,20 @@ export const Order = () => {
               <div className="order__block2">
                 <h5>Товары в корзине</h5>
                 {items.map((item) => (
-                  <div className="order__product" key={item.id}>
+                  <Link to={`/${item.id}`} >
+                    <div className="order__product" key={item.id}>
                     <img src={item.image} alt="" />
                     <div className="order__product-text">
                       <p>{item.title}</p>
                       <p>{item.price} ₴ </p>
                       <p>{item.quantity} шт</p>
                     </div>
-                  </div>
+                  </div></Link>
                 ))}
-                {showModal && <Modal onClose={() => setShowModal(false)} />}
               </div>
+              {thankYouModalOpen && <ThankYouModal onClose={closeThankYouModal} />}
+
+              {showModal && <Modal onClose={() => setShowModal(false)} />}
             </div>
           </div>
         )}

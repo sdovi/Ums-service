@@ -1,8 +1,39 @@
 import React from 'react'
 import './style.scss'
 import logo from './img/logo.svg'
+import { DownOutlined } from '@ant-design/icons';
+import { Dropdown, Space } from 'antd';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
+    const items = [
+        {
+            label: <Link to={'/product'}><li><a class="dropdown-item drop-text" href="#">ЭНУЗЕРНЫЕ БУДИЛЬНИКИ</a></li></Link>,
+            key: '0',
+        },
+        {
+            type: 'divider',
+        },
+        {
+            label: <Link to={'/product'}><li><a class="dropdown-item drop-text" href="#">ПУЛЬСОКСИМЕТРЫ</a></li></Link>,
+            key: '1',
+        },
+        {
+            type: 'divider',
+        },
+        {
+            label: <Link to={'/product'}><li><a class="dropdown-item drop-text" href="#">ТЕРМОМЕТРЫ</a></li></Link>,
+            key: '2',
+        },
+        {
+            type: 'divider',
+        },
+        {
+            label: <Link to={'/product'}><li><a class="dropdown-item drop-text" href="#">НЕПРОМОКАЕМЫЕ</a></li></Link>,
+            key: '3',
+        },
+    ];
+
     return (
         <div>
             
@@ -12,7 +43,20 @@ export const Footer = () => {
                     <div className="footer-container-bottom">
                         <div className="footer-bottom-block">
                             <img src={logo} alt="" />
-                            <h4 className='footer__katalog'>Каталог</h4>
+                            
+                            <Dropdown
+                                    menu={{
+                                        items,
+                                    }}
+                                    trigger={['click']}
+                                >
+                                    <a onClick={(e) => e.preventDefault()}>
+                                        <Space>
+                                            <h5 class="  contack-link2" >Каталог</h5>
+                                            <DownOutlined />
+                                        </Space>
+                                    </a>
+                                </Dropdown>
                             <h4>Гарантия</h4>
                             <h4>Оплата и доставка</h4>
                             <h4>Отзывы</h4>
